@@ -7,17 +7,14 @@ gem 'pg'
 gem 'activerecord'
 gem 'clockwork'
 gem 'environments'
-gem 'dotenv', '~> 2.1'
-
-source 'https://gem.fury.io/emprego-ligado/' do
-  gem 'event_bus'
-end
+gem 'event_bus'
 
 group :production do
   gem 'puma', '~> 3.2'
 end
 
 group :development, :test do
+  gem 'dotenv', '~> 2.1'
   gem 'yard', '~> 0.8'
   gem 'yard-tomdoc', '~> 0.7'
   gem 'pry-meta', '~> 0.0'
