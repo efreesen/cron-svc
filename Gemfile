@@ -7,7 +7,7 @@ gem 'pg'
 gem 'activerecord'
 gem 'clockwork'
 gem 'environments'
-gem 'event_bus'
+gem 'event_bus_rb'
 
 group :production do
   gem 'puma', '~> 3.2'
